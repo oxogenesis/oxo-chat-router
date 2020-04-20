@@ -1,8 +1,9 @@
-# oxo-chat-router oxo-chat消息路由器
-只包含消息转发功能  
+# oxo-chat-router
+oxo消息路由器，只包含消息转发功能  
 
 # code
 **[client](https://github.com/oxogenesis/oxo-chat-client)**  
+**[router](https://github.com/oxogenesis/oxo-chat-router)**  
 **[server](https://github.com/oxogenesis/oxo-chat-server)**  
 
 # wiki
