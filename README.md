@@ -1,5 +1,6 @@
 # oxo-chat-router
-oxo消息路由器，只包含消息转发功能  
+oxo消息路由器
+* 消息转发功能  
 
 # code
 **[client](https://github.com/oxogenesis/oxo-chat-client)**  
