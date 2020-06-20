@@ -202,7 +202,6 @@ function checkClientMessage(ws, message) {
                     //当前连接无对应地址，当前地址无对应连接，全新连接
                     console.log(`connection established from client <${address}>`)
                     ClientConns[address] = ws
-                    updateAccountList()
                     //handleClientMessage(message, json)
                 } else if (ClientConns[address] != ws && ClientConns[address].readyState == WebSocket.OPEN) {
                     //new connection kick old conection with same address
@@ -210,7 +209,6 @@ function checkClientMessage(ws, message) {
                     sendServerMessage(ClientConns[address], MessageCode["NewConnectionOpening"])
                     ClientConns[address].close()
                     ClientConns[address] = ws
-                    updateAccountList()
                     //handleClientMessage(message, json)
                 } else {
                     ws.send("WTF...")
