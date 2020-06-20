@@ -132,7 +132,6 @@ function sendServerMessage(ws, msgCode) {
 
 //client connection
 let ClientConns = {}
-let accountList = 'obeTvR9XDbUwquA6JPQhmbgaCCaiFa2rvf'
 
 function fetchClientConnAddress(ws) {
     for (let address in ClientConns) {
@@ -141,14 +140,6 @@ function fetchClientConnAddress(ws) {
         }
     }
     return null
-}
-
-function updateAccountList(argument) {
-    let accountArray = ['obeTvR9XDbUwquA6JPQhmbgaCCaiFa2rvf']
-    for (let address in ClientConns) {
-        accountArray.push(address)
-    }
-    accountList = accountArray.join('<br>')
 }
 
 let ClientServer = null
